@@ -44,20 +44,6 @@
             <a href="/"
                 ><img class="w-52" src="{{asset('images/logo.png')}}" alt="" class="logo"
             /></a>
-            <ul class="flex space-x-6 mr-6 text-lg">
-                <li>
-                    <a href="manage.html" class="hover:text-laravel"
-                        ><i class="fa-solid fa-gear"></i> Manage Gigs</a
-                    >
-                </li>
-                <li>
-                    <form action="index.html">
-                        <button>
-                            <i class="fa-solid fa-door-closed"></i> Logout
-                        </button>
-                    </form>
-                </li>
-            </ul>
         </nav>
 
         <main>
@@ -77,13 +63,13 @@
 
                         <div class="mb-6">
                             <label for="title" class="inline-block text-lg mb-2"
-                                >Club name</label
+                                >field name</label
                             >
                             <input
                                 type="text"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="fieldName"
-                                placeholder="Example: Senior Laravel Developer"
+                                
                                 value="{{old('fieldName')}}"
                             />@error('fieldName')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
@@ -100,7 +86,7 @@
                                 type="text"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="location"
-                                placeholder="Example: Remote, Boston MA, etc"
+                                
                                 value="{{old('location')}}"
                             />@error('location')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
@@ -116,7 +102,6 @@
                                 type="number"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="phone"
-                                placeholder="Example: Remote, Boston MA, etc"
                                 value="{{old('phone')}}"
                             />@error('phone')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 

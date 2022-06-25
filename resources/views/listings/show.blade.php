@@ -21,7 +21,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#00C800",
+                            laravel: "#3cb371",
                         },
                     },
                 },
@@ -40,7 +40,7 @@
                     <div class="flex flex-col items-center justify-center text-center"
                     >
                         <img
-                            class="w-48 mr-6 mb-6"
+                            class="w-99 h-72 mr-6 mb-6"
                             src="{{$listing->fieldPic ? asset('storage/'. $listing->fieldPic) :  asset('/images/no-image.png')}}"
                             alt=""
                         />
@@ -58,7 +58,7 @@
                             <div class="text-lg space-y-6">
                                 {{$listing->description}}
 
-                                <br><br><br><br>
+                                <br><br>
                                 <a href="booking/booking.html" class="btn btn-success">Booking Now</a>
                                 <a
                                     href="{{$listing->map}}"
@@ -69,20 +69,7 @@
                             </div>
                             <br>
 
-                            <a href="/listings/{{$listing->id}}/edit">
-                                <i class="fa-solid fa-pencil"> </i> Edit
-                                 </a>
-                                 <br>
-                                 <form method="POST" action="/listings/{{$listing->id}}">
-                                 @csrf
-                                 @method('DELETE')
-                                 <br>
-                                 <button class="text-red-500">
-                                     <i class="fa-solid fa-trash"> DELETE</i>
-                                 </button>
-             
-             
-                                 </form>
+                           
              
                         </div>
                     </div>

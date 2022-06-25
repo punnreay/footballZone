@@ -31,7 +31,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#00C800",
+                            laravel: "#3cb371",
                         },
                     },
                 },
@@ -44,20 +44,7 @@
             <a href="/"
                 ><img class="w-52" src="{{asset('images/logo.png')}}" alt="" class="logo"
             /></a>
-            <ul class="flex space-x-6 mr-6 text-lg">
-                <li>
-                    <a href="manage.html" class="hover:text-laravel"
-                        ><i class="fa-solid fa-gear"></i> Manage Gigs</a
-                    >
-                </li>
-                <li>
-                    <form action="index.html">
-                        <button>
-                            <i class="fa-solid fa-door-closed"></i> Logout
-                        </button>
-                    </form>
-                </li>
-            </ul>
+            
         </nav>
 
         <main>
@@ -83,7 +70,7 @@
                                 type="text"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="fieldName"
-                                placeholder="Example: Senior Laravel Developer"
+                                placeholder="Enter club name"
                                 value="{{old('fieldName')}}"
                             />@error('fieldName')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
@@ -100,7 +87,7 @@
                                 type="text"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="location"
-                                placeholder="Example: Remote, Boston MA, etc"
+                                placeholder="Enter location"
                                 value="{{old('location')}}"
                             />@error('location')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
@@ -116,7 +103,7 @@
                                 type="number"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="phone"
-                                placeholder="Example: Remote, Boston MA, etc"
+                                placeholder="Enter your phone number"
                                 value="{{old('phone')}}"
                             />@error('phone')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
@@ -134,6 +121,7 @@
                                 type="text"
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="map"
+                                placeholder="Enter map link or URL"
                                 value="{{old('map')}}"
                             />@error('map')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 
@@ -166,7 +154,7 @@
                                 class="border border-gray-200 rounded p-2 w-full"
                                 name="description"
                                 rows="10"
-                                placeholder="Include tasks, requirements, salary, etc"
+                                placeholder="Describe Your field Ex: player 5vs5  7vs7..."
                                 value="{{old('description')}}"
                             ></textarea>@error('description')
                             <p class="text-red-500 text-xs mt-1">{{$message}}</p> 

@@ -39,25 +39,12 @@
         </script>
 
     </head>
-    <body class="mb-48">
+    <body class="mb-38">
         <nav class="flex justify-between items-center mb-4">
-            <a href="index.html"
+            <a href="/"
                 ><img class="w-52" src="{{asset('images/logo.png')}}" alt="" class="logo"
             /></a>
-            <ul class="flex space-x-6 mr-6 text-lg">
-                <li>
-                    <a href="manage.html" class="hover:text-laravel"
-                        ><i class="fa-solid fa-gear"></i> Manage Gigs</a
-                    >
-                </li>
-                <li>
-                    <form action="index.html">
-                        <button>
-                            <i class="fa-solid fa-door-closed"></i> Logout
-                        </button>
-                    </form>
-                </li>
-            </ul>
+        
         </nav>
 
         <main>
@@ -69,7 +56,7 @@
                         <h1
                             class="text-3xl text-center font-bold my-6 uppercase"
                         >
-                            Manage Gigs
+                            Manage Fields
                         </h1>
                     </header>
 

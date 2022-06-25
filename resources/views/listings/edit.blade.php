@@ -31,7 +31,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#00C800",
+                            laravel: "#3cb371",
                         },
                     },
                 },
@@ -44,20 +44,7 @@
             <a href="/"
                 ><img class="w-52" src="{{asset('images/logo.png')}}" alt="" class="logo"
             /></a>
-            <ul class="flex space-x-6 mr-6 text-lg">
-                <li>
-                    <a href="manage.html" class="hover:text-laravel"
-                        ><i class="fa-solid fa-gear"></i> Manage Gigs</a
-                    >
-                </li>
-                <li>
-                    <form action="index.html">
-                        <button>
-                            <i class="fa-solid fa-door-closed"></i> Logout
-                        </button>
-                    </form>
-                </li>
-            </ul>
+            
         </nav>
 
         <main>
@@ -143,8 +130,13 @@
 
                         <div class="mb-6">
                             <label for="logo" class="inline-block text-lg mb-2">
-                                Field Pic
+                                change Pic
                             </label>
+                            <input
+                                type="file"
+                                class="border border-gray-200 rounded p-2 w-full"
+                                name="fieldPic"
+                            />
                             <img
                             class="w-48 mr-6 mb-6"
                             src="{{$listing->fieldPic ? asset('storage/'. $listing->fieldPic) :  asset('/images/no-image.png')}}"
